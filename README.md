@@ -2,7 +2,9 @@
 
 For this test assignment, you will have to create your own simple state management library like Redux or MobX to handle events and store data across the application.
 
-The starter code for this app includes two pages - a home page with a list of parts with a name, id and status, and a page that is supposed to hold a form for creating new parts.
+You are expected **not to use external libraries or packages** (including React) for this state management library, but create your own in vanilla Javascript/Typescript. If you do leverage an external library, you are to justify it in your documentation.
+
+You will then use this state management library in a simple React application. The starter code for this app includes two pages - a home page with a list of parts with a name, id and status, and a page that is supposed to hold a form for creating new parts.
 
 ```ts
 type Part = {
@@ -13,7 +15,7 @@ type Part = {
 ```
 
 1. You should store your library code in the `/lib` folder of this repository.
-2. You are free to use any architecture pattern for designing your library. It can be **Flux**, **Redux**, **BloC**, etc.
+2. You are free to use any architecture pattern for designing your library's API. It can be **Flux**, **Redux**, **BloC**, etc.
 3. Your library should be integrated with a simple example app in `src` folder.
    1. You should create a form component for creating a new part, with the relevant fields.
    2. When a part is created, an action must be dispatched notifying the rest of the app that a new part has been created.
@@ -40,6 +42,7 @@ You will be judged by following criteria:
 - Usage of typescript features
 - Quality of tests for providing good coverage, code stability, self-documentation etc.
 - Presence of documentation, whether it be in comments, README, auto-generated or otherwise.
+- Justification of third-party libraries, components, and packages.
 
 ## Start the development
 
