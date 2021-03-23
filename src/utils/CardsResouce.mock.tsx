@@ -24,9 +24,10 @@ export class CardsResourceMock {
         return JSON.parse(localStorage.getItem(this.key) || '');
     }
 
-    async get(id: number): Promise<CardInterface> {
-        // @ts-ignore
-        return (await this.getAll()).find(({ id: _id }) => _id === id);
+    async get(id: number): Promise<CardInterface | null> {
+        return (await this.getAll()).find(
+            ({ id: _id }) => _id === id
+        ) as CardInterface | null;
     }
 
     private saveInStorage(data: CardInterface[]) {

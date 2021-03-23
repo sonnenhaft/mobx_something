@@ -8,9 +8,9 @@ import { pause } from '../utils';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-// it('pause check', async () => {
-//     await pause(0.1);
-// }, 101);
+it('pause check', async () => {
+    await pause(0.1);
+}, 101);
 
 describe('<EditCardPage />', () => {
     it('initially to have loading', async () => {

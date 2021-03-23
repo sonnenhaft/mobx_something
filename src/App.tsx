@@ -27,7 +27,7 @@ const links = [
 
 export const App = () => (
     <Router>
-        <React.Fragment>
+        <>
             <GlobalStyle />
             <Menu links={links} />
 
@@ -41,6 +41,6 @@ export const App = () => (
                     />
                 ))}
             </Centered>
-        </React.Fragment>
+        </>
     </Router>
 );

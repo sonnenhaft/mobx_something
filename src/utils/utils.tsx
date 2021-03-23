@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 
-export function useAsync<
-    T = any,
-    P = [{ data?: T | null; error?: any; loading?: boolean }, () => void]
->(fn: () => Promise<T>): P {
+export function useAsync<T = void | any>(
+    fn: () => Promise<T>
+): [{ data?: T | null; error?: unknown; loading?: boolean }, () => void] {
     const [data, setData] = useState<T | null>(null);
     const [started, setStarted] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -26,14 +25,11 @@ export function useAsync<
         };
 
         started && fetchData();
-    }, [started]);
+    }, [started, fn]);
 
     const fetch = () => {
-        if (!started) {
-            setStarted(true);
-        }
+        !started && setStarted(true);
     };
-    // @ts-ignore
     return [{ data, loading, error }, fetch];
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { EditCardPage } from './EditCardPage';
 import { render, screen } from '@testing-library/react';
 import { Route, MemoryRouter } from 'react-router-dom';
@@ -18,7 +18,7 @@ it('should render "Add" state', async () => {
 });
 
 export const warpWithRouter = (
-    children: any,
+    children: ReactElement,
     path: string,
     initialPath: string
 ) => (
