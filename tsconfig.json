@@ -5,8 +5,12 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "lib": ["es6", "es2017", "DOM"],
+    "jsx": "react",
+    "lib": [
+      "es6",
+      "es2017",
+      "DOM"
+    ],
     "moduleResolution": "node",
     "noEmit": true,
     "strict": true,
@@ -14,8 +18,13 @@
     "baseUrl": "src",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext"
+    "module": "esnext",
+    "noFallthroughCasesInSwitch": true
   },
-  "exclude": ["node_modules"],
-  "include": ["src"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src"
+  ]
 }
