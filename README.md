@@ -62,17 +62,11 @@ When you are done with the test, please send a link to your repo to us. Thank yo
 
 ## My notes
 
-1. Want to note that I am not fan of redux, and did not want to make this test task because too many places where person who will review may dislike, same as initial template has no test configs, it is not a big pleasure to configure js projects for test tasks, in real life most of ppl track days and weeks for this, me not, but it is too big overhead for test task.
-2. So I was fighting with myself, read something not properly in description, and decided "why not, will practice again mobx"
-3. Then when was almost ready, read description again and decided - ok, instead I will prototype my own mobx (without reading articles about it, basing on Proxy object or on some new es6 features if any, and I never used before).
-4. So my plan became following:
+Please note many developers find Redux is huge overhead in production (I think the same too, even Dan Abramov last few years stating this), so decided that it would be nice to implement MobX style. Since MobX is much more complex from implementation point, and even draft implementation took me quite a lot of time. I want to mention that not all items from the TODO list are complete or done on a perfect level. Anyway I like the result (mostly because I learned something) and find that it is fair enough (as for the test task). So my plan was following:
    1. Prepare crud mock object that will work with localStorage and imitate delay      
    2. Write app with hooks
    3. Write 2-3 minor tests so by test can see if my migration to mobx will fail
    4. Migrate to mobx
    5. Imitate mobx
-   6. PROFIT!
    
-And even this shot plan took me too much time, and I am close to sure that this effort will not be appreciated, because I did not spoke with anyone from ur company, and in first place was given test task.
-
-So again, I am sorry sharing not complete task, I am proud that I made attempt to replicate MobX (I am fan of it), hope to get even minor feedback, because spent pretty much time.
+And even this short plan took me quite too much time, so I decided to pause here. Thank you for understanding.
