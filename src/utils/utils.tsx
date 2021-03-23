@@ -38,7 +38,10 @@ export function useAsync<
 }
 
 export const pause = (seconds = 0) =>
-    new Promise(r => setTimeout(r, seconds * 1000));
+    new Promise(r => setTimeout(r, pause.disabled ? 0 : seconds * 1000));
+
+// for test purposes
+pause.disabled = false;
 
 export const mockedData = [
     { name: 'Test part', id: 123, status: 'Checked In' },
